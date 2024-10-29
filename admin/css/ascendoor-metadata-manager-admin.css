@@ -1,0 +1,159 @@
+.ascendoor-metadata-manager-table {
+	border-spacing: unset;
+	table-layout: fixed;
+}
+.ascendoor-metadata-manager-table tr .meta-key {
+	width: 25%;
+}
+.ascendoor-metadata-manager-table tr .meta-value {
+	width: 60%;
+}
+.ascendoor-metadata-manager-table tr .meta-action {
+	width: 15%;
+	text-align: center;
+}
+.ascendoor-metadata-manager-table tbody td,
+.ascendoor-metadata-manager-table thead th {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.ascendoor-metadata-manager-table tr, 
+.ascendoor-metadata-manager-table th {
+	text-align: initial;
+}
+.ascendoor-metadata-manager-table tbody th, 
+.ascendoor-metadata-manager-table tbody td {
+	color: #777;
+	font-weight: 400;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 14px;
+	word-break: break-all;
+}
+.ascendoor-metadata-manager-table tr th, 
+.ascendoor-metadata-manager-table tr td {
+	position: relative;
+	-webkit-transition: .3s all ease;
+	-o-transition: .3s all ease;
+	transition: .3s all ease; 
+}
+.ascendoor-metadata-manager-table tr th:before, 
+.ascendoor-metadata-manager-table tr th:after, 
+.ascendoor-metadata-manager-table tr td:before, 
+.ascendoor-metadata-manager-table tr td:after {
+	-webkit-transition: .3s all ease;
+	-o-transition: .3s all ease;
+	transition: .3s all ease;
+	content: "";
+	left: 0;
+	right: 0;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden; 
+}
+.ascendoor-metadata-manager-table tr th:after, 
+.ascendoor-metadata-manager-table tr td:after {
+	background: #cececece;
+	opacity: 1;
+	visibility: visible; 
+}
+.ascendoor-metadata-manager-table tr td .protected-meta svg {
+	width: 20px;
+	opacity: 0.8;
+}
+.ascendoor-metadata-manager-table tr th:before, 
+.ascendoor-metadata-manager-table tr td:before {
+	top: -1px; 
+}
+.ascendoor-metadata-manager-table tr th:after, 
+.ascendoor-metadata-manager-table tr td:after {
+	bottom: -1px; 
+}
+.ascendoor-metadata-manager-table tbody tr:hover th, 
+.ascendoor-metadata-manager-table tbody tr:hover td {
+	background: rgba(0, 123, 255, 0.03); 
+}
+.ascendoor-metadata-manager-table tbody tr:hover th:before, 
+.ascendoor-metadata-manager-table tbody tr:hover th:after, 
+.ascendoor-metadata-manager-table tbody tr:hover td:before, 
+.ascendoor-metadata-manager-table tbody tr:hover td:after {
+	background: #007bff;
+}
+.ascendoor-metadata-manager-table tbody tr:hover th:before, 
+.ascendoor-metadata-manager-table tbody tr:hover td:before {
+	opacity: 1;
+	visibility: visible; 
+}
+
+.ascendoor-metadata-manager-table tbody tr .meta-action > div {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+}
+.ascendoor-metadata-manager-table tbody tr .meta-action > div > a {
+	display: block;
+	width: 22px;
+}
+.ascendoor-metadata-manager-table tbody tr .meta-action > div > a:hover > svg {
+	stroke: #007bff;
+}
+.ascendoor-metadata-manager-table tbody tr .meta-action > div > a:nth-child(even) {
+	margin-left: 5px;
+}
+.ascendoor-metadata-manager-table tbody tr .meta-action > div > a > svg {
+	stroke: #777;
+	display: block;
+}
+
+.ascendoor-metadata-manager-table .meta-value textarea[disabled] {
+	border: 0;
+	background: transparent;
+	box-shadow: unset;
+	color: inherit;
+	resize: none;
+}
+.ascendoor-metadata-manager-table .meta-value textarea {
+	width: 100% !important;
+}
+
+.ascendoor-metadata-manager-table .meta-edit-info {
+	display: inline-block;
+	position: relative;
+	cursor: help;
+	height: 13px;
+}
+.ascendoor-metadata-manager-table .meta-edit-info:hover .meta-edit-info-content {
+	display: block;
+}
+.ascendoor-metadata-manager-table .meta-edit-info svg {
+	width: 15px;
+	stroke: #007bff;
+}
+.ascendoor-metadata-manager-table .meta-edit-info .meta-edit-info-content {
+	display: none;
+    position: absolute;
+    left: 15px;
+    width: 200px;
+    top: -40px;
+    background: #cecece;
+    padding: 10px;
+    border-radius: 10px;
+    word-break: break-word;
+	color: #484848;
+	z-index: 1;
+}
+
+#profile-page .ascendoor-metadata-manager .postbox-header,
+form[id="edittag"] .ascendoor-metadata-manager .postbox-header {
+	pointer-events: none;
+}
+#profile-page .ascendoor-metadata-manager .postbox-header .hndle,
+form[id="edittag"] .ascendoor-metadata-manager .postbox-header .hndle {
+	cursor: auto;
+}
+#profile-page .ascendoor-metadata-manager .handle-actions,
+form[id="edittag"] .ascendoor-metadata-manager .handle-actions {
+	display: none !important;
+}
